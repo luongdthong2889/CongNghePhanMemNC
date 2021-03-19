@@ -32,7 +32,7 @@
    		<td>Có một trang đăng ký tài khoản</td>
 		<td>Đăng ký</td>
  	</tr>
-    <tr>
+    	<tr>
   		<td>Người quản lý và người dùng</td>
    		<td>Thêm, sửa, xóa tin rao vặt</td>
 		<td>Quản lý tin đã đăng</td>
@@ -47,7 +47,7 @@
    		<td>Theo dõi tin rao vặt của bản thân</td>
 		<td>Để nhận tương tác của người mua</td>
  	</tr>
-     <tr>
+     	<tr>
   		<td>Người quản lý và người dùng</td>
    		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
 		<td>Quản lý thuận tiện hơn</td>
@@ -61,5 +61,10 @@
   		<td>Người dùng</td>
    		<td>Chat qua Messenger</td>
 		<td>Trả lời các thắc mắc của người mua</td>
+ 	</tr>
+	<tr>
+  		<td>Người quản lý</td>
+   		<td>Xem, thêm, sửa, xóa một người dùng mới</td>
+		<td>Tiện cho việc quản lý</td>
  	</tr>
 </table>
