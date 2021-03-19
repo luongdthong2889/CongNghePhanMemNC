@@ -48,7 +48,7 @@
 		<td>Để nhận tương tác của người mua</td>
  	</tr>
      <tr>
-  		<td>Người quản lý</td>
+  		<td>Người quản lý và người dùng</td>
    		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
 		<td>Quản lý thuận tiện hơn</td>
  	</tr>
