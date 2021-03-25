@@ -6,7 +6,8 @@
 ## Mô tả đề tài :
 <ul>
     <li>Tạo ra một ứng dụng đáp ứng nhu cầu cho khách hàng giúp tiết kiệm thời gian mua bán, tiền bạc</li>
-    <li>Giúp nhóm phát triển, nâng cao kỹ năng lập trình web</li>
+    <li>Giúp nhóm phát triển, nâng cao kỹ năng lập trình Web ASP.Net Framework</li>
+    <li>Giúp nhóm ôn lại kiến thức về HTML, CSS, Javascript</li>
     <li>Giúp áp dụng kiến thức được học trong môn CNPM</li>
 </ul>
 
