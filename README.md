@@ -50,7 +50,7 @@
 	<tr>
   		<td>Người dùng</td>
    		<td>Hiển thị những tin đăng rao vặt mới nhất</td>
-		<td>Được ung cấp thông tin về các tin mới nhất</td>
+		<td>Được cung cấp thông tin về các tin mới nhất</td>
  	</tr>
      	<tr>
   		<td>Người dùng</td>
