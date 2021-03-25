@@ -22,6 +22,21 @@
    		<td>Thêm, sửa, xóa một danh mục</td>
 		<td>Quản lý dễ dàng</td>
  	</tr>
+	<tr>
+  		<td>Người quản lý và người dùng</td>
+   		<td>Thêm, sửa, xóa tin rao vặt</td>
+		<td>Quản lý tin đã đăng</td>
+ 	</tr>
+	<tr>
+  		<td>Người quản lý</td>
+   		<td>Xem, thêm, sửa, xóa một người dùng mới</td>
+		<td>Tiện cho việc quản lý</td>
+ 	</tr>
+	<tr>
+  		<td>Người dùng</td>
+   		<td>Có một trang thông tin cá nhân (profile)</td>
+		<td>Xem, chỉnh sửa thông tin của chính mình</td>
+ 	</tr>
  	<tr>
   		<td>Người quản lý</td>
    		<td>Người dùng truy cập vào web có thể đăng nhập</td>
@@ -31,16 +46,6 @@
   		<td>Người dùng</td>
    		<td>Có một trang đăng ký tài khoản</td>
 		<td>Đăng ký</td>
- 	</tr>
-    	<tr>
-  		<td>Người quản lý và người dùng</td>
-   		<td>Thêm, sửa, xóa tin rao vặt</td>
-		<td>Quản lý tin đã đăng</td>
- 	</tr>
- 	<tr>
-  		<td>Người dùng</td>
-   		<td>Có một trang thông tin cá nhân (profile)</td>
-		<td>Xem, chỉnh sửa thông tin của chính mình</td>
  	</tr>
  	<tr>
   		<td>Người dùng</td>
@@ -62,11 +67,7 @@
    		<td>Chat qua Messenger</td>
 		<td>Trả lời các thắc mắc của người mua</td>
  	</tr>
-	<tr>
-  		<td>Người quản lý</td>
-   		<td>Xem, thêm, sửa, xóa một người dùng mới</td>
-		<td>Tiện cho việc quản lý</td>
- 	</tr>
+
 	<tr>
   		<td>Người dùng</td>
    		<td>Thu thập mức độ hài lòng của người mua</td>
