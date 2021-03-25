@@ -48,33 +48,33 @@
 		<td>Đăng ký</td>
  	</tr>
 	<tr>
-  		<td>Người quản lý và người dùng</td>
-   		<td>Hiển thị tin mới nhất, tin nổi bật</td>
-		<td>Để người mua được recommend tin mới, nổi bật</td>
+  		<td>Người dùng</td>
+   		<td>Hiển thị những tin đăng rao vặt mới nhất</td>
+		<td>Cung cấp thông tin về các tin mới nhất</td>
  	</tr>
  	<tr>
   		<td>Người dùng</td>
    		<td>Theo dõi tin rao vặt của bản thân</td>
-		<td>Để nhận tương tác của người mua</td>
+		<td>Có thể nhận thông báo từ người mua</td>
  	</tr>
      	<tr>
-  		<td>Người quản lý và người dùng</td>
-   		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
-		<td>Quản lý thuận tiện hơn</td>
+  		<td>Người dùng</td>
+   		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
+		<td>Tìm kiếm, sắp xếp với bộ lọc theo yêu cầu</td>
  	</tr>
         <tr>
   		<td>Người dùng</td>
-   		<td>Bình luận trực tuyến</td>
-		<td>Trả lời các thắc mắc của người mua</td>
+   		<td>Bình luận</td>
+		<td>Giao tiếp giữa người mua và người bán dễ dàng hơn</td>
  	</tr>
         <tr>
   		<td>Người dùng</td>
    		<td>Chat qua Messenger</td>
-		<td>Trả lời các thắc mắc của người mua</td>
+		<td>Được hỗ trợ, tư vấn trực tuyến </td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
-   		<td>Thu thập mức độ hài lòng của người mua</td>
-		<td>Để tăng độ uy tín của bản thân</td>
+   		<td>Đánh giá các sản phẩm theo sao</td>
+		<td>Đánh giá chất lượng của sản phẩm</td>
  	</tr>
 </table>
