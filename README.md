@@ -47,6 +47,11 @@
    		<td>Có một trang đăng ký tài khoản</td>
 		<td>Đăng ký</td>
  	</tr>
+	<tr>
+  		<td>Người quản lý và người dùng</td>
+   		<td>Hiển thị tin mới nhất, tin nổi bật</td>
+		<td>Để người mua được recommend tin mới, nổi bật</td>
+ 	</tr>
  	<tr>
   		<td>Người dùng</td>
    		<td>Theo dõi tin rao vặt của bản thân</td>
@@ -67,15 +72,9 @@
    		<td>Chat qua Messenger</td>
 		<td>Trả lời các thắc mắc của người mua</td>
  	</tr>
-
 	<tr>
   		<td>Người dùng</td>
    		<td>Thu thập mức độ hài lòng của người mua</td>
 		<td>Để tăng độ uy tín của bản thân</td>
- 	</tr>
-		<tr>
-  		<td>Người quản lý và người dùng</td>
-   		<td>Hiển thị tin mới nhất, tin nổi bật</td>
-		<td>Để người mua được recommend tin mới, nổi bật</td>
  	</tr>
 </table>
