@@ -52,15 +52,20 @@
    		<td>Hiển thị những tin đăng rao vặt mới nhất</td>
 		<td>Cung cấp thông tin về các tin mới nhất</td>
  	</tr>
- 	<tr>
-  		<td>Người dùng</td>
-   		<td>Theo dõi tin rao vặt của bản thân</td>
-		<td>Có thể nhận thông báo từ người mua</td>
- 	</tr>
      	<tr>
   		<td>Người dùng</td>
    		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
 		<td>Tìm kiếm, sắp xếp với bộ lọc theo yêu cầu</td>
+ 	</tr>
+	<tr>
+  		<td>Người dùng</td>
+   		<td>Đánh giá các sản phẩm theo sao</td>
+		<td>Đánh giá chất lượng của sản phẩm</td>
+ 	</tr>
+	 <tr>
+  		<td>Người dùng</td>
+   		<td>Theo dõi tin rao vặt của bản thân</td>
+		<td>Có thể nhận thông báo từ người mua</td>
  	</tr>
         <tr>
   		<td>Người dùng</td>
@@ -72,9 +77,5 @@
    		<td>Chat qua Messenger</td>
 		<td>Được hỗ trợ, tư vấn trực tuyến </td>
  	</tr>
-	<tr>
-  		<td>Người dùng</td>
-   		<td>Đánh giá các sản phẩm theo sao</td>
-		<td>Đánh giá chất lượng của sản phẩm</td>
- 	</tr>
+
 </table>
