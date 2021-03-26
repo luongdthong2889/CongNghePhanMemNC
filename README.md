@@ -5,7 +5,7 @@
 * Trần Minh Chí: 18DH110859
 ## Mô tả đề tài :
 <ul>
-    <li>Tạo ra một ứng dụng đáp ứng nhu cầu cho khách hàng giúp tiết kiệm thời gian mua bán, tiền bạc</li>
+    <li>Tạo ra một trang web đáp ứng nhu cầu cho khách hàng giúp tiết kiệm thời gian mua bán, tiền bạc</li>
     <li>Giúp kiếm tiền thụ động một cách hiệu quả và nhanh chóng</li>
     <li>Giúp doanh nghiệp triển khai các hoạt động kinh doanh, truyền thông hiệu quả</li>
 </ul>
