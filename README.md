@@ -39,8 +39,8 @@
 		<td>Xem, chỉnh sửa thông tin của chính mình</td>
  	</tr>
  	<tr>
-  		<td>Người quản lý</td>
-   		<td>Người dùng truy cập vào web có thể đăng nhập</td>
+  		<td>Người dùng</td>
+   		<td>Truy cập vào web có thể đăng nhập</td>
 		<td>Thực hiện các chức năng phù hợp</td>
  	</tr>
         <tr>
@@ -49,19 +49,19 @@
 		<td>Đăng ký</td>
  	</tr>
 	<tr>
+  		<td>Người dùng</td>
+   		<td>Có một trang lấy lại mật khẩu</td>
+		<td>Thực hiện các chức năng phù hợp</td>
+ 	</tr>
+	<tr>
   		<td>Người dùng</td>
-   		<td>Hiển thị những tin đăng rao vặt mới nhất</td>
-		<td>Được cung cấp thông tin về các tin mới nhất</td>
+   		<td>Hiển thị những tin đăng rao vặt</td>
+		<td>Được cung cấp thông tin về các tin</td>
  	</tr>
      	<tr>
   		<td>Người dùng</td>
    		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
 		<td>Tìm kiếm, sắp xếp với bộ lọc theo yêu cầu</td>
- 	</tr>
-	<tr>
-  		<td>Người dùng</td>
-   		<td>Đánh giá các sản phẩm theo sao</td>
-		<td>Đánh giá chất lượng của sản phẩm</td>
  	</tr>
 	 <tr>
   		<td>Người dùng</td>
@@ -77,6 +77,11 @@
   		<td>Người dùng</td>
    		<td>Chat qua Messenger</td>
 		<td>Được hỗ trợ, tư vấn trực tuyến </td>
+ 	</tr>
+	<tr>
+  		<td>Người dùng</td>
+   		<td>Chia sẻ những tin đăng rao vặt</td>
+		<td>Chia sẻ thông tin cho bạn bè</td>
  	</tr>
 
 </table>
