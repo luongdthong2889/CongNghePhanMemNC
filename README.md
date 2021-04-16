@@ -20,7 +20,7 @@
  	</tr>
 	<tr>
   		<td>Người quản lý</td>
-   		<td>Truy cập vào web có thể đăng nhập</td>
+   		<td>Truy cập vào web phải đăng nhập</td>
 		<td>Thực hiện các chức năng quản lý danh mục, thành viên ...</td>
  	</tr>
 	<tr>
