@@ -18,30 +18,35 @@
 		<th>Tôi muốn</th>
 		<th>Để</th>
  	</tr>
+	<tr>
+  		<td>Người quản lý</td>
+   		<td>Truy cập vào web có thể đăng nhập</td>
+		<td>Thực hiện các chức năng quản lý danh mục, thành viên ...</td>
+ 	</tr>
+	<tr>
+  		<td>Người quản lý</td>
+   		<td>Xem, thêm, sửa, xóa một tài khoản</td>
+		<td>Tiện cho việc quản lý</td>
+ 	</tr>
+	<tr>
+  		<td>Người quản lý</td>
+   		<td>Xem, thêm, sửa, xóa một tài khoản thành viên</td>
+		<td>Tiện cho việc quản lý</td>
+ 	</tr>
  	<tr>
   		<td>Người quản lý</td>
-   		<td>Thêm, sửa, xóa một danh mục</td>
+   		<td>Xem, thêm, sửa, xóa một danh mục</td>
 		<td>Quản lý dễ dàng</td>
  	</tr>
 	<tr>
   		<td>Người quản lý và người dùng</td>
-   		<td>Thêm, sửa, xóa tin rao vặt</td>
+   		<td>Xem, thêm, sửa, xóa tin rao vặt</td>
 		<td>Quản lý tin đã đăng</td>
  	</tr>
 	<tr>
-  		<td>Người quản lý</td>
-   		<td>Xem, thêm, sửa, xóa một người dùng mới</td>
-		<td>Tiện cho việc quản lý</td>
- 	</tr>
-	<tr>
-  		<td>Người dùng</td>
-   		<td>Có một trang thông tin cá nhân (profile)</td>
-		<td>Xem, chỉnh sửa thông tin của chính mình</td>
- 	</tr>
- 	<tr>
   		<td>Người dùng</td>
    		<td>Truy cập vào web có thể đăng nhập</td>
-		<td>Thực hiện các chức năng phù hợp</td>
+		<td>Thực hiện các chức năng đăng tin, lưu tin ...</td>
  	</tr>
         <tr>
   		<td>Người dùng</td>
@@ -54,19 +59,24 @@
 		<td>Thực hiện các chức năng phù hợp</td>
  	</tr>
 	<tr>
+  		<td>Người dùng</td>
+   		<td>Có một trang thông tin cá nhân (profile)</td>
+		<td>Xem, chỉnh sửa thông tin của chính mình</td>
+ 	</tr>
+	<tr>
   		<td>Người dùng</td>
-   		<td>Hiển thị những tin đăng rao vặt</td>
-		<td>Được cung cấp thông tin về các tin</td>
+   		<td>Hiển thị những tin đăng rao vặt mới trên trang chủ</td>
+		<td>Mọi người có thể thấy tin đăng của tôi</td>
  	</tr>
      	<tr>
   		<td>Người dùng</td>
    		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
-		<td>Tìm kiếm, sắp xếp với bộ lọc theo yêu cầu</td>
+		<td>Tìm kiếm, sắp xếp với bộ lọc theo loại tin, khoảng giá ...</td>
  	</tr>
 	 <tr>
   		<td>Người dùng</td>
-   		<td>Theo dõi tin rao vặt của bản thân</td>
-		<td>Có thể nhận thông báo từ người mua</td>
+   		<td>Nhận thông báo từ người mua đã lưu tin rao của tôi</td>
+		<td>Tiếp cận khách hàng dễ dàng hơn</td>
  	</tr>
         <tr>
   		<td>Người dùng</td>
@@ -75,13 +85,13 @@
  	</tr>
         <tr>
   		<td>Người dùng</td>
-   		<td>Chat qua Messenger</td>
-		<td>Được hỗ trợ, tư vấn trực tuyến </td>
+   		<td>Chat qua chatbox</td>
+		<td>Chat giữa người mua và người bán</td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
-   		<td>Chia sẻ những tin đăng rao vặt</td>
-		<td>Chia sẻ thông tin cho bạn bè</td>
+   		<td>Chia sẻ những tin đăng rao vặt qua mạng xã hội</td>
+		<td>Giúp mọi người nắm bắt thông tin dễ dàng hơn</td>
  	</tr>
 
 </table>
