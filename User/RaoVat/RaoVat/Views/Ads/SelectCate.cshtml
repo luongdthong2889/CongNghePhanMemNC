@@ -1,0 +1,3 @@
+﻿@model RaoVat.Models.CATEGORY
+@Html.DropDownListFor(model => model.MALOAI,
+new SelectList(Model.ListCate.OrderBy(model => model.TENLOAI), "MALOAI", "TENLOAI"), "--Select Cate--")

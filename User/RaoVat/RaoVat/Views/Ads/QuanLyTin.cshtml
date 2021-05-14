@@ -1,0 +1,76 @@
+﻿@model IEnumerable<RaoVat.Models.RAOVAT>
+
+@{
+    ViewBag.Title = "QuanLyTin";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+
+
+
+<div class="container-fluid bg-body" style="margin-top:100px">
+    <div class="row">
+        <div class="col-md-2">
+            @{Html.RenderAction("AdscatePartial", "Ads");}
+        </div>
+        <div class="col-md-10">
+            <h2>QuanLyTin</h2>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TIEUDE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NGAYGIODANG)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.GIA)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CATEGORY.TENLOAI)
+                    </th>
+                    <th>
+                        Hình ảnh
+                    </th>
+                    <th>
+                        Trạng Thái
+                    </th>
+                    <th>Chức năng</th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TIEUDE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NGAYGIODANG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GIA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CATEGORY.TENLOAI)
+                </td>
+                <td>
+                    <img src="@Url.Content(item.HINHANH1)" height="50" width="50" />
+                </td>
+                <td style="color:lawngreen">
+                    @Html.DisplayFor(modelItem => item.TRANGTHAI.TRANGTHAI1)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MATIN }) |
+                    <a href="@Url.Action("Detail","Categories",new { id = item.MATIN },"")">Detail</a> |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MATIN })
+                </td>
+            </tr>
+                }
+
+            </table>
+
+            <br />
+            <br />
+        </div>
+    </div>
+</div>

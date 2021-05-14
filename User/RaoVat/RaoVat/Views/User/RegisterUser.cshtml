@@ -1,0 +1,41 @@
+﻿@model RaoVat.Models.USER
+
+@{
+    ViewBag.Title = "RegisterUser";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<h2 class="mg-t-cate">Đăng ký</h2>
+<div style="margin-left:600px">
+    @using (Html.BeginForm("RegisterUser", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <p>@Html.LabelFor(model => model.TENDANGNHAP)</p>
+        <p>@Html.EditorFor(model => model.TENDANGNHAP)</p>
+        <p>@Html.ValidationMessageFor(model => model.TENDANGNHAP)</p>
+        if (ViewBag.ErrorRegister != null)
+        {
+            <p style="color:red">@ViewBag.ErrorRegister</p>
+        }
+
+        <p>@Html.LabelFor(model => model.MATKHAU)</p>
+        <p>@Html.EditorFor(model => model.MATKHAU)</p>
+        <p>@Html.ValidationMessageFor(model => model.MATKHAU)</p>
+
+        <p>@Html.LabelFor(model => model.ConfirmPass)</p>
+        <p>@Html.EditorFor(model => model.ConfirmPass)</p>
+        <p>@Html.ValidationMessageFor(model => model.ConfirmPass)</p>
+
+        <p>@Html.LabelFor(model => model.SODIENTHOAI)</p>
+        <p>@Html.EditorFor(model => model.SODIENTHOAI)</p>
+        <p>@Html.ValidationMessageFor(model => model.SODIENTHOAI)</p>
+
+        <input type="submit" value="Đăng Ký" />
+    }
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
