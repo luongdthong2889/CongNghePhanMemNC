@@ -1,7 +1,7 @@
 ﻿@model DemoDB2.Models.RAOVAT
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -12,7 +12,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Thêm mới tin rao</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Sửa tin rao</h6>
             </div>
             <div class="card-body">
 
@@ -26,7 +26,6 @@
                         <hr />
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         @Html.HiddenFor(model => model.MATIN)
-
 
                         <div class="form-group">
                             <div class="col-md-2">
@@ -123,7 +122,7 @@
 
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Tạo" class="btn btn-primary" />
+                                <input type="submit" value="Lưu" class="btn btn-primary" />
                             </div>
                         </div>
                     </div>

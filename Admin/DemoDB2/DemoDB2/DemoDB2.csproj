@@ -2193,6 +2193,9 @@
     <Content Include="Views\RaoVat\Index.cshtml" />
     <Content Include="Views\RaoVat\SelectTrangThai.cshtml" />
     <Content Include="Views\RaoVat\Create.cshtml" />
+    <Content Include="Views\RaoVat\Edit.cshtml" />
+    <Content Include="Views\RaoVat\Delete.cshtml" />
+    <Content Include="Views\RaoVat\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
