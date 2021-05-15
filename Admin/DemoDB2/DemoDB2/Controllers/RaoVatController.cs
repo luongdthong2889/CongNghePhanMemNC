@@ -1,6 +1,7 @@
 ﻿using DemoDB2.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,20 +18,29 @@ namespace DemoDB2.Controllers
         //}
         public ActionResult Create()
         {
-            return View();
+            RAOVAT raovat = new RAOVAT();
+            return View(raovat);
         }
         [HttpPost]
-        public ActionResult Create(RAOVAT x)
+        public ActionResult Create(RAOVAT raovat,DateTime _ngayhethang)
         {
             try
             {
-                db.RAOVATs.Add(x);
+                raovat.MATRANGTHAI = 1;
+                raovat.NGAYGIODANG = DateTime.Now;
+                raovat.NGAYHETHAN = _ngayhethang;
+                string filename = Path.GetFileNameWithoutExtension(raovat.UploadImage.FileName);
+                string extent = Path.GetExtension(raovat.UploadImage.FileName);
+                filename = filename + extent;
+                raovat.HINHANH1 = "~/Content/img/" + filename;
+                raovat.UploadImage.SaveAs(Path.Combine(Server.MapPath("~/Content/img/"), filename));
+                db.RAOVATs.Add(raovat);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","RaoVat");
             }
             catch
             {
-                return Content("Error Create New");
+                return View();
             }
         }
         public ActionResult Details(int id)
@@ -73,6 +83,12 @@ namespace DemoDB2.Controllers
                 return View(db.RAOVATs.ToList());
             else
                 return View(db.RAOVATs.Where(s => s.TIEUDE.Contains(_name)).ToList());
+        }
+        public ActionResult SelectTrangThai()
+        {
+            TRANGTHAI se_trangthai = new TRANGTHAI();
+            se_trangthai.ListTrangThai = db.TRANGTHAIs.ToList<TRANGTHAI>();
+            return PartialView(se_trangthai);
         }
         public ActionResult SelectCate()
         {
