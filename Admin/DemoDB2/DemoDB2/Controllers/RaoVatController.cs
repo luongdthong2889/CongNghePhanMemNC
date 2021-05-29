@@ -114,5 +114,14 @@ namespace DemoDB2.Controllers
             se_hinhthuc.ListHinhThuc = db.HINHTHUCs.ToList<HINHTHUC>();
             return PartialView(se_hinhthuc);
         }
+        public ActionResult Duyet(int id)
+        {
+            foreach(var p in db.RAOVATs.Where(s=>s.MATIN == id))
+            {
+                p.MATRANGTHAI = 1;
+            }
+            db.SaveChanges();
+            return RedirectToAction("Index", "RaoVat");
+        }
     }
 }

@@ -85,9 +85,14 @@
                                     @Html.DisplayFor(modelItem => item.USER.TENDANGNHAP)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Sửa", "Edit", new { id = item.MANGUOIDUNG }) |
-                                    @Html.ActionLink("Chi tiết", "Details", new { id = item.MANGUOIDUNG }) |
-                                    @Html.ActionLink("Xóa", "Delete", new { id = item.MANGUOIDUNG })
+                                    @{ if (item.MATRANGTHAI == 2)
+                                                        {
+                                                            @Html.ActionLink("Duyệt Bài", "Duyet", new { id = item.MATIN }); <a>|</a>
+                                                        } 
+                                        }
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.MATIN }) |
+                                    @Html.ActionLink("Chi tiết", "Details", new { id = item.MATIN }) |
+                                    @Html.ActionLink("Xóa", "Delete", new { id = item.MATIN })
                                 </td>
                             </tr>
                         }

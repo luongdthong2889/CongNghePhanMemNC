@@ -1,9 +1,7 @@
 ﻿@model DemoDB2.Models.RAOVAT
 
-@{
-    ViewBag.Title = "Create";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+@{ ViewBag.Title = "Create";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -17,9 +15,9 @@
             <div class="card-body">
 
 
-                @using (Html.BeginForm())
+                @using (Html.BeginForm("Create", "RaoVat", FormMethod.Post, new { enctype = "multipart/form-data" }))
                 {
-                    @Html.AntiForgeryToken()
+    @Html.AntiForgeryToken()
 
                     <div class="form-horizontal">
                         <h4>Thông tin tin rao</h4>
@@ -65,13 +63,13 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            @Html.LabelFor(model => model.USER.TENDANGNHAP, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @*<div class="form-group">
+                            @Html.LabelFor(model => model.MANGUOIDUNG, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.EditorFor(model => model.USER.TENDANGNHAP, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.USER.TENDANGNHAP, "", new { @class = "text-danger" })
+                                @Html.EditorFor(model => model.MANGUOIDUNG, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MANGUOIDUNG, "", new { @class = "text-danger" })
                             </div>
-                        </div>
+                        </div>*@
 
                         <div class="form-group">
                             @Html.LabelFor(model => model.TIEUDE, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -126,8 +124,7 @@
                                 <input type="submit" value="Tạo" class="btn btn-primary" />
                             </div>
                         </div>
-                    </div>
-                }
+                    </div>}
 
                 <div>
                     @Html.ActionLink("Về Danh sách", "Index")
