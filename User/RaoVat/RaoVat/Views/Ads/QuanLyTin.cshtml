@@ -59,9 +59,18 @@
                         <td>
                             <img src="@Url.Content(item.HINHANH1)" height="50" width="50" />
                         </td>
-                        <td style="color:lawngreen">
-                            @Html.DisplayFor(modelItem => item.TRANGTHAI.TRANGTHAI1)
-                        </td>
+                        @{
+                if (item.MATRANGTHAI == 2)
+                {
+                                                <td style="color:red">
+                                                    @Html.DisplayFor(modelItem => item.TRANGTHAI.TRANGTHAI1)
+                                                </td>
+                            }
+                            else
+                            { <td style="color:lawngreen">
+                                 @Html.DisplayFor(modelItem => item.TRANGTHAI.TRANGTHAI1)
+                                 </td>}
+                        }
                         <td>
                             @Html.ActionLink("Edit", "Edit", new { id = item.MATIN }) |
                             <a href="@Url.Action("Detail","Categories",new { id = item.MATIN },"")">Detail</a> |

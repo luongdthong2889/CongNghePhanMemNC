@@ -86,6 +86,7 @@ namespace RaoVat.Controllers
                 raovat.HINHANH1 = "~/Content/img/" + filename;
                 raovat.UploadImage.SaveAs(Path.Combine(Server.MapPath("~/Content/img/"), filename));
                 raovat.NGAYGIODANG = DateTime.Now;
+                raovat.NGAYHETHAN = DateTime.Now.AddDays(30);
                 raovat.MALOAITIN = 1;
                 raovat.MATRANGTHAI = 2;
                 var userTenDangNhap = Session["TENDANGNHAP"];

@@ -21,54 +21,57 @@
                     </div>
                     <!-- End Search Form -->
                     <!-- Start Search Form -->
-                    <div class="search-form wow fadeInUp" data-wow-delay=".7s">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-12 p-0">
-                                <div class="search-input">
-                                    <label for="keyword"><i class="lni lni-search-alt theme-color"></i></label>
-                                    <input type="text" name="keyword" id="keyword" placeholder="Nhập sản phầm cần tìm...">
+                    @using (Html.BeginForm("Search", "Categories"))
+                    {
+                        <div class="search-form wow fadeInUp" data-wow-delay=".7s">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12 p-0">
+                                    <div class="search-input">
+                                        <label for="keyword"><i class="lni lni-search-alt theme-color"></i></label>
+                                        <input type="text" name="keyword" id="keyword" placeholder="Nhập sản phầm cần tìm...">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-12 p-0">
-                                <div class="search-input">
-                                    <label for="category"><i class="lni lni-grid-alt theme-color"></i></label>
-                                    <select name="category" id="category">
-                                        <option value="none" selected disabled>Mục rao vặt</option>
-                                        <option value="none">Xe</option>
-                                        <option value="none">Đồ điện tử</option>
-                                        <option value="none">Hôn nhân</option>
-                                        <option value="none">Nội Thất</option>
-                                        <option value="none">Công việc</option>
-                                        <option value="none">Địa ốc</option>
-                                        <option value="none">Sức khỏe và làm đẹp</option>
-                                        <option value="none">Thời trang</option>
-                                        <option value="none">Giáo dục</option>
-                                        <option value="none">Dụng cụ</option>
-                                        <option value="none">Du lịch</option>
-                                    </select>
+                                <div class="col-lg-3 col-md-3 col-12 p-0">
+                                    <div class="search-input">
+                                        <label for="category"><i class="lni lni-grid-alt theme-color"></i></label>
+                                        <select name="category" id="category">
+                                            <option value="none" selected disabled>Mục rao vặt</option>
+                                            <option value="none">Xe</option>
+                                            <option value="none">Đồ điện tử</option>
+                                            <option value="none">Hôn nhân</option>
+                                            <option value="none">Nội Thất</option>
+                                            <option value="none">Công việc</option>
+                                            <option value="none">Địa ốc</option>
+                                            <option value="none">Sức khỏe và làm đẹp</option>
+                                            <option value="none">Thời trang</option>
+                                            <option value="none">Giáo dục</option>
+                                            <option value="none">Dụng cụ</option>
+                                            <option value="none">Du lịch</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-12 p-0">
-                                <div class="search-input">
-                                    <label for="location"><i class="lni lni-map-marker theme-color"></i></label>
-                                    <select name="location" id="location">
-                                        <option value="none" selected disabled>Địa điểm</option>
-                                        <option value="none">TP.HCM</option>
-                                        <option value="none">Hà Nội</option>
-                                        <option value="none">Cần Thơ</option>
-                                        <option value="none">Huế</option>
-                                        <option value="none">Quảng Ninh</option>
-                                        <option value="none">Quảng Ngải</option>
-                                    </select>
+                                <div class="col-lg-3 col-md-3 col-12 p-0">
+                                    <div class="search-input">
+                                        <label for="location"><i class="lni lni-map-marker theme-color"></i></label>
+                                        <select name="location" id="location">
+                                            <option value="none" selected disabled>Địa điểm</option>
+                                            <option value="none">TP.HCM</option>
+                                            <option value="none">Hà Nội</option>
+                                            <option value="none">Cần Thơ</option>
+                                            <option value="none">Huế</option>
+                                            <option value="none">Quảng Ninh</option>
+                                            <option value="none">Quảng Ngải</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-12 p-0">
-                                <div class="search-btn button">
-                                    <button class="btn"><i class="lni lni-search-alt"></i>Tìm kiếm</button>
+                                <div class="col-lg-2 col-md-2 col-12 p-0">
+                                    <div class="search-btn button">
+                                        <button class="btn"><i class="lni lni-search-alt"></i>Tìm kiếm</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
                     <!-- End Search Form -->
                 </div>
             </div>
@@ -210,7 +213,7 @@
                         <!-- Start Single Grid -->
                         <div class="single-grid wow fadeInUp" data-wow-delay=".2s">
                             <div class="image">
-                                <a href="@Url.Action("Detail","Categories",new { id = item.MATIN },"")" class="thumbnail"><img src="@Url.Content(item.HINHANH1)" alt="#"></a>
+                                <a href="@Url.Action("Detail","Categories",new { id = item.MATIN },"")" class="thumbnail"><img src="@Url.Content(item.HINHANH1)" width="250" height="200" alt="#"></a>
                                 <div class="author">
                                     <div class="author-image">
                                         <a href="javascript:void(0)">

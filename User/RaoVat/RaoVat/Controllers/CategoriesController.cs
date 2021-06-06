@@ -27,12 +27,12 @@ namespace RaoVat.Controllers
             int pageNum = (page ?? 1);
             if (category == null)
             {
-                var list = db.RAOVATs.OrderByDescending(x => x.TIEUDE).Where(s => s.MATRANGTHAI == 1);
+                var list = db.RAOVATs.OrderByDescending(x => x.NGAYGIODANG).Where(s => s.MATRANGTHAI == 1);
                 return View(list.ToPagedList(pageNum,pageSize));
             }
             else
             {
-                var list = db.RAOVATs.OrderByDescending(x => x.TIEUDE).Where(x => x.CATEGORY.TENLOAI == category && x.MATRANGTHAI == 1);
+                var list = db.RAOVATs.OrderByDescending(x => x.NGAYGIODANG).Where(x => x.CATEGORY.TENLOAI == category && x.MATRANGTHAI == 1);
                 return View(list.ToPagedList(pageNum, pageSize));
             }
         }
@@ -40,7 +40,7 @@ namespace RaoVat.Controllers
         {
             int pageSize = 4;
             int pageNum = (page ?? 1);
-            var search = db.RAOVATs.Where(x => x.TIEUDE.Contains(keyword)).ToList();
+            var search = db.RAOVATs.Where(x => x.TIEUDE.Contains(keyword) && x.MATRANGTHAI == 1).ToList();
             return View(search.ToPagedList(pageNum, pageSize));
         }
         public PartialViewResult CategoryPartial()
