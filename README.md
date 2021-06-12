@@ -20,92 +20,62 @@
  	</tr>
 	<tr>
   		<td>Người quản lý</td>
-   		<td>Đăng nhập</td>
+   		<td>Trang đăng nhập</td>
 		<td>Đăng nhập vào trang web</td>
  	</tr>
 	<tr>
-  		<td>Người quản lý</td>
-   		<td>Duyệt tin đăng</td>
-		<td>Duyệt tin đăng</td>
- 	</tr>
-	<tr>
   		<td>Người quản lý</td>
-   		<td>Tìm kiếm, thêm, sửa, xóa một người dùng</td>
-		<td>Quản lý người dùng</td>
+   		<td>Trang quản lý người dùng</td>
+		<td>Tìm kiếm, thêm, sửa, xóa một người dùng</td>
  	</tr>
 	<tr>
   		<td>Người quản lý</td>
-   		<td>Tìm kiếm, thêm, sửa, xóa một tin đăng</td>
-		<td>Quản lý tin đăng</td>
+		<td>Trang quản lý tin đăng</td>
+   		<td>Duyệt, tìm kiếm, thêm, sửa, xóa một tin đăng</td>
  	</tr>
  	<tr>
   		<td>Người quản lý</td>
+		<td>Trang quản lý danh mục tin đăng</td>
    		<td>Tìm kiếm, thêm, sửa, xóa một danh mục tin đăng</td>
-		<td>Quản lý danh mục tin đăng</td>
- 	</tr>
-	<tr>
-  		<td>Người quản lý</td>
-   		<td>Đăng xuất</td>
-		<td>Đăng xuất tài khoản khỏi hệ thống</td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
-   		<td>Đăng ký</td>
+   		<td>Trang chủ</td>
+		<td>Lựa chọn danh mục, tin đăng</td>
+ 	</tr>
+	<tr>
+  		<td>Người dùng</td>
+   		<td>Trang đăng ký</td>
 		<td>Đăng ký tài khoản</td>
  	</tr>
         <tr>
   		<td>Người dùng</td>
-   		<td>Đăng nhập</td>
+   		<td>Trang đăng nhập</td>
 		<td>Đăng nhập vào trang web</td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
-   		<td>Quên mật khẩu</td>
+   		<td>Trang quên mật khẩu</td>
 		<td>Tìm lại mật khẩu cho tài khoản của mình</td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
+		<td>Trang quản lý hồ sơ cá nhân</td>
    		<td>Xem hoặc chỉnh sửa các thông tin trong hồ sơ cá nhân của tài khoản</td>
-		<td>Quản lý hồ sơ cá nhân</td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
-   		<td>Đăng tin</td>
-		<td>Đăng tin</td>
- 	</tr>
-	<tr>
-  		<td>Người dùng</td>
+		<td>Trang quản lý tin đăng</td>
    		<td>Thêm, sửa, xóa một tin đăng</td>
-		<td>Quản lý tin đăng</td>
- 	</tr>
-	<tr>
-  		<td>Người dùng</td>
-   		<td>Tìm kiếm</td>
-		<td>Tìm kiếm một tin đăng nào đó</td>
- 	</tr>
-	<tr>
-  		<td>Người dùng</td>
-   		<td>Lọc</td>
-		<td>Tìm kiếm một hay nhiều loại tin đăng nào đó</td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
-   		<td>Xem danh sách tin đăng</td>
+   		<td>Trang danh sách tin đăng</td>
 		<td>Xem danh sách tin đăng</td>
  	</tr>
 	<tr>
   		<td>Người dùng</td>
-   		<td>Xem chi tiết tin đăng</td>
+   		<td>Trang chi tiết tin đăng</td>
 		<td>Xem chi tiết tin đăng</td>
- 	</tr>
-	<tr>
-  		<td>Người dùng</td>
-   		<td>Đăng xuất</td>
-		<td>Đăng xuất tài khoản khỏi hệ thống</td>
- 	</tr>
-        <tr>
-  		<td>Người dùng</td>
-   		<td>Chat qua chatbox</td>
-		<td>Chat giữa người mua và người bán</td>
  	</tr>
 </table>
