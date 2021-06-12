@@ -25,12 +25,7 @@
  	</tr>
 	<tr>
   		<td>Người quản lý</td>
-   		<td>Xem, thêm, sửa, xóa một tài khoản</td>
-		<td>Tiện cho việc quản lý</td>
- 	</tr>
-	<tr>
-  		<td>Người quản lý</td>
-   		<td>Xem, thêm, sửa, xóa một tài khoản thành viên</td>
+   		<td>Xem, thêm, sửa, xóa một tài khoản người dùng</td>
 		<td>Tiện cho việc quản lý</td>
  	</tr>
  	<tr>
@@ -73,25 +68,9 @@
    		<td>Lọc, tìm kiếm, sắp xếp tin rao vặt</td>
 		<td>Tìm kiếm, sắp xếp với bộ lọc theo loại tin, khoảng giá ...</td>
  	</tr>
-	 <tr>
-  		<td>Người dùng</td>
-   		<td>Nhận thông báo từ người mua đã lưu tin rao của tôi</td>
-		<td>Tiếp cận khách hàng dễ dàng hơn</td>
- 	</tr>
-        <tr>
-  		<td>Người dùng</td>
-   		<td>Bình luận</td>
-		<td>Giao tiếp giữa người mua và người bán dễ dàng hơn</td>
- 	</tr>
         <tr>
   		<td>Người dùng</td>
    		<td>Chat qua chatbox</td>
 		<td>Chat giữa người mua và người bán</td>
  	</tr>
-	<tr>
-  		<td>Người dùng</td>
-   		<td>Chia sẻ những tin đăng rao vặt qua mạng xã hội</td>
-		<td>Giúp mọi người nắm bắt thông tin dễ dàng hơn</td>
- 	</tr>
-
 </table>
