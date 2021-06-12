@@ -1,0 +1,55 @@
+﻿@model RaoVat.Models.USER
+
+@{
+    ViewBag.Title = "DetailInfo";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+
+<div class="container-fluid bg-body" style="margin-top:100px">
+    <div class="row">
+        <div class="col-md-2">
+            @{Html.RenderAction("AdscatePartial", "Ads");}
+        </div>
+        <div class="col-md-10">
+            <h2>Thông tin người dùng</h2>
+
+            <div>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.TENDANGNHAP)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TENDANGNHAP)
+                    </dd>
+
+                    <dt>
+                        Mật khẩu
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MATKHAU)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.SODIENTHOAI)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SODIENTHOAI)
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Thay đổi", "EditUser", new { id = Model.MANGUOIDUNG } , new { @class = "btn btn-primary" })
+            </p>
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<br />
