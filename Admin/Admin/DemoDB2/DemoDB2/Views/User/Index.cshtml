@@ -24,15 +24,21 @@
                     <thead>
                         <tr>
                             <th>Tên Đăng Nhập</th>
+                            <th>Họ Tên</th>
+                            <th>Ngày Sinh</th>
                             <th>Số Điện Thoại</th>
+                            <th>Email</th>
                             <th>Chức Năng</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>Tên Đăng Nhập</th>
+                            <th>Họ Tên</th>
+                            <th>Ngày Sinh</th>
                             <th>Số Điện Thoại</th>
-                            <th>Chức Năng</th>
+                            <th>Email</th>
+                            <th>Chức Năng</th>
                         </tr>
                     </tfoot>
                     <tbody>
@@ -43,7 +49,16 @@
                                 @Html.DisplayFor(modelItem => item.TENDANGNHAP)
                             </td>
                             <td>
+                                @Html.DisplayFor(modelItem => item.HOTEN)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NGAYSINH)
+                            </td>
+                            <td>
                                 @Html.DisplayFor(modelItem => item.SODIENTHOAI)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EMAIL)
                             </td>
                             <td>
                                 @Html.ActionLink("Sửa", "Edit", new { id = item.MANGUOIDUNG }) |

@@ -156,7 +156,21 @@ namespace RaoVat.Controllers
         [HttpPost]
         public ActionResult EditUser(int id, USER user)
         {
+            db.USERs.Attach(user);
             user.ErrorLogin = "NULL";
+            if (user.GIOITINH == null)
+            {
+                user.GIOITINH = false;
+            }
+
+            if (user.NGAYSINH == null)
+            {
+                user.NGAYSINH = DateTime.Now;
+            }
+            if (user.DIACHI == null)
+            {
+                user.DIACHI = "NULL";
+            }
             db.Entry(user).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("QuanLyTin");

@@ -29,18 +29,24 @@ namespace DemoDB2.Controllers
         [HttpPost]
         public ActionResult Create(FormCollection frc)
         {
-            var _usernname = frc["username"];
+            var _username = frc["username"];
+            var _name = frc["name"];
             var _phone = frc["phone"];
+            var _email = frc["email"];
             var _pass = frc["pass"];
+            var _repeat_pass = frc["repeat-pass"];
             if (ModelState.IsValid)
             {
-                var check_id = db.USERs.Where(s => s.TENDANGNHAP == _usernname).FirstOrDefault();
+                var check_id = db.USERs.Where(s => s.TENDANGNHAP == _username).FirstOrDefault();
                 if (check_id == null)//chưa có id
                 {
                     USER _user = new USER();
-                    _user.TENDANGNHAP = _usernname;
+                    _user.TENDANGNHAP = _username;
+                    _user.HOTEN = _name;
                     _user.SODIENTHOAI = _phone;
+                    _user.EMAIL = _email;
                     _user.MATKHAU = _pass;
+                    _user.ConfirmPass = _repeat_pass;
                     db.Configuration.ValidateOnSaveEnabled = false;
                     db.USERs.Add(_user);
                     db.SaveChanges();
@@ -66,9 +72,21 @@ namespace DemoDB2.Controllers
         [HttpPost]
         public ActionResult Edit(int id, USER x)
         {
-            var userTenDangNhap = Session["TENDANGNHAP"];
-            var userCurrent = db.USERs.Where(s => s.TENDANGNHAP == userTenDangNhap.ToString()).FirstOrDefault();
-            x.MANGUOIDUNG = Convert.ToInt32(userCurrent.MANGUOIDUNG);
+            db.USERs.Attach(x);
+            x.ErrorLogin = "NULL";
+            if (x.GIOITINH == null)
+            {
+                x.GIOITINH = false;
+            }
+
+            if (x.NGAYSINH == null)
+            {
+                x.NGAYSINH = DateTime.Now;
+            }
+            if (x.DIACHI == null)
+            {
+                x.DIACHI = "NULL";
+            }
             db.Entry(x).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");

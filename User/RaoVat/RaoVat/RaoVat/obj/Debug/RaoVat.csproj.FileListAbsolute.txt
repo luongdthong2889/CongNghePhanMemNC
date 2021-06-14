@@ -632,8 +632,8 @@ D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\bin\S
 D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\bin\System.Web.Helpers.xml
 D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\bin\System.Web.Mvc.xml
 D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\obj\Debug\RaoVat.csprojAssemblyReference.cache
 D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\obj\Debug\RaoVat.csproj.CoreCompileInputs.cache
 D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\obj\Debug\RaoVat.csproj.CopyComplete
 D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\obj\Debug\RaoVat.dll
 D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\obj\Debug\RaoVat.pdb
-D:\HUFLIT HK 2 NAM 3\Lap Trinh Tren Web NC\Do An\User\RaoVat\RaoVat\RaoVat\obj\Debug\RaoVat.csprojAssemblyReference.cache
