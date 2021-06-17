@@ -171,6 +171,10 @@ namespace RaoVat.Controllers
             {
                 user.DIACHI = "NULL";
             }
+            if (user.ResetPasswordCode == null)
+            {
+                user.ResetPasswordCode = Guid.NewGuid().ToString();
+            }
             db.Entry(user).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("QuanLyTin");

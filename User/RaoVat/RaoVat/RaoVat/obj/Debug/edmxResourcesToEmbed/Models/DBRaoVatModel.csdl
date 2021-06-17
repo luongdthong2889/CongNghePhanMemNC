@@ -101,6 +101,7 @@
     <Property Name="NGAYSINH" Type="DateTime" Precision="0" />
     <Property Name="HOTEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="RAOVATs" Relationship="Self.FK_RAOVAT_USER" FromRole="USER" ToRole="RAOVAT" />
+    <Property Name="ResetPasswordCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="ADMIN">
     <Key>

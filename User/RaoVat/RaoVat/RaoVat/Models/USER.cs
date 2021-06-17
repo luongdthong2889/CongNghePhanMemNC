@@ -27,6 +27,7 @@ namespace RaoVat.Models
         [Required(ErrorMessage = "Tên tài khoản không được trống")]
         public string TENDANGNHAP { get; set; }
         [Display(Name = "Mật Khẩu")]
+        [StringLength(50,MinimumLength = 8, ErrorMessage = "Mật khẩu có ít nhất 8 kí tự")]
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "Mật khẩu không được trống")]
         public string MATKHAU { get; set; }
@@ -48,6 +49,9 @@ namespace RaoVat.Models
         [Display(Name = "Họ Tên")]
         [Required(ErrorMessage = "Họ tên không được trống")]
         public string HOTEN { get; set; }
+        public bool IsEmailVerified { get; set; }
+        public string ResetPasswordCode { get; set; }
+        public System.Guid ActivationCode { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RAOVAT> RAOVATs { get; set; }

@@ -47,10 +47,15 @@ namespace RaoVat.Models
 
         public virtual CATEGORY CATEGORY { get; set; }
         public virtual HINHTHUC HINHTHUC { get; set; }
+        [Display(Name = "Loại Tin")]
         public virtual LOAITIN LOAITIN { get; set; }
+        [Display(Name = "Tỉnh, Thành Phố")]
         public virtual TINHTHANHPHO TINHTHANHPHO { get; set; }
+        [Display(Name = "Tình Trạng")]
         public virtual TINHTRANG TINHTRANG { get; set; }
+        [Display(Name = "Trạng Thái")]
         public virtual TRANGTHAI TRANGTHAI { get; set; }
+        [Display(Name = "Người Dùng")]
         public virtual USER USER { get; set; }
 
         [NotMapped]

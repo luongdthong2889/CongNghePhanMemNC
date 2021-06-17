@@ -86,6 +86,7 @@
     <EntitySetMapping Name="USERs">
       <EntityTypeMapping TypeName="DBRaoVatModel.USER">
         <MappingFragment StoreEntitySet="USER">
+          <ScalarProperty Name="ResetPasswordCode" ColumnName="ResetPasswordCode" />
           <ScalarProperty Name="MANGUOIDUNG" ColumnName="MANGUOIDUNG" />
           <ScalarProperty Name="TENDANGNHAP" ColumnName="TENDANGNHAP" />
           <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />

@@ -21,7 +21,8 @@ namespace DemoDB2.Models
         {
             this.RAOVATs = new HashSet<RAOVAT>();
         }
-
+        [Display(Name = "Mã Người Dùng")]
+        [Required(ErrorMessage = "Tên tài khoản không được trống")]
         public int MANGUOIDUNG { get; set; }
         [Display(Name = "Tên Người Dùng")]
         [Required(ErrorMessage = "Tên tài khoản không được trống")]

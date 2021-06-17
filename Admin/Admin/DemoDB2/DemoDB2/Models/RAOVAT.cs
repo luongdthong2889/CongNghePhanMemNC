@@ -21,12 +21,19 @@ namespace DemoDB2.Models
         {
             HINHANH1 = "~/Content/img/upload-i.jpg";
         }
+        [Display(Name = "Mã Tin")]
         public int MATIN { get; set; }
+        [Display(Name = "Mã Trạng Thái")]
         public int MATRANGTHAI { get; set; }
+        [Display(Name = "Mã Loại")]
         public int MALOAI { get; set; }
+        [Display(Name = "Mã Tình Trạng")]
         public int MATINHTRANG { get; set; }
+        [Display(Name = "Mã Loại Tin")]
         public int MALOAITIN { get; set; }
+        [Display(Name = "Mã Hình Thức")]
         public int MAHINHTHUC { get; set; }
+        [Display(Name = "Mã Người Dùng")]
         public int MANGUOIDUNG { get; set; }
         [Display(Name = "Tiêu Đề")]
         public string TIEUDE { get; set; }
@@ -41,7 +48,9 @@ namespace DemoDB2.Models
         public Nullable<int> GIA { get; set; }
         [Display(Name = "Địa Chỉ")]
         public string DIACHI { get; set; }
+        [Display(Name = "Ngày Hết Hạn")]
         public Nullable<System.DateTime> NGAYHETHAN { get; set; }
+        [Display(Name = "Mã Thành Phố")]
         public Nullable<int> MATHANHPHO { get; set; }
     
         public virtual CATEGORY CATEGORY { get; set; }

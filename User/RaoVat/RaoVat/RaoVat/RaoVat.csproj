@@ -469,6 +469,7 @@
     <Compile Include="Models\RAOVAT.cs">
       <DependentUpon>DBRaoVatModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ResetPasswordModel.cs" />
     <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>DBRaoVatModel.tt</DependentUpon>
     </Compile>
@@ -616,6 +617,8 @@
     <Content Include="Views\Ads\EditUser.cshtml" />
     <Content Include="Views\Shared\_LayoutRegisterUser.cshtml" />
     <Content Include="Views\Ads\SelectState.cshtml" />
+    <Content Include="Views\User\ForgotPassword.cshtml" />
+    <Content Include="Views\User\ResetPassword.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
