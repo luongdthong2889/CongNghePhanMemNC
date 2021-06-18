@@ -2,6 +2,7 @@
 @using RaoVat.Models;
 @using PagedList.Mvc;
 @model PagedList.PagedList<RAOVAT>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
 @{
     ViewBag.Title = "Index";
@@ -17,6 +18,11 @@
     l2.Add(new SelectListItem() { Text = "Hàng Mới" });
     l2.Add(new SelectListItem() { Text = "Hàng Đã Qua Sử Dụng" });
 
+    // List sắp xếp giá
+    List<SelectListItem> l3 = new List<SelectListItem>();
+    l3.Add(new SelectListItem() { Text = "Giá Tăng Dần" });
+    l3.Add(new SelectListItem() { Text = "Giá Giảm Dần" });
+
     // List tỉnh, thành phố
     List<SelectListItem> l4 = new List<SelectListItem>();
     l4.Add(new SelectListItem() { Text = "Thành phố Hà Nội" });
@@ -26,12 +32,30 @@
     l4.Add(new SelectListItem() { Text = "Thành phố Cần Thơ" });
 }
 <style>
-    .MenuPage{
-        display:grid;
+    .MenuPage {
+        display: grid;
+    }
+
+    .formtim {
+        position: relative;
+        display: inline-block;
+        padding-left: 200px;
+    }
+    .bntcss{
+        display: inline-block;
+        padding: 12px 36px 5px;
+        margin: 10px 0 0 400px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 2px;
+        border-radius: 40px;
+        background: linear-gradient(90deg,#0162c8,#55e7fc);
     }
 </style>
 
-<div class="container-fluid body-content">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-2">
             @{ Html.RenderAction("CategoryPartial", "Categories");}
@@ -48,11 +72,6 @@
                                 <label for="keyword"><i class="lni lni-search-alt theme-color"></i></label>
                                 <input type="text" name="keyword" id="keyword" placeholder="Nhập sản phầm cần tìm...">
                             </div>
-                            @*<div class="form-inline">
-                            @Html.DropDownList("HINHTHUC", l1, "Hình thức", new { @style = "width:auto", @class = "form-control" })
-                            @Html.DropDownList("TINHTRANG", l2, "Tình trạng", new { @style = "width:auto", @class = "form-control" })
-                            @Html.DropDownList("TENTHANHPHO", l4, "Địa điểm", new { @style = "width:auto", @class = "form-control" })
-                                 </div>*@
                         </div>
                         <div class="col-lg-2 col-md-2 col-12 p-0">
                             <div class="search-btn button">
@@ -61,8 +80,43 @@
                         </div>
                     </div>
                 </div>
-            }
 
+                <!-- Search Form -->
+                <form class="formtim">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-lg-1">
+                                @Html.DropDownList("HINHTHUC", l1, "Hình thức", new { @style = "width:auto", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-1">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                            <div class="col-lg-2">
+                                @Html.DropDownList("TINHTRANG", l2, "Tình trạng", new { @style = "width:auto", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-1">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                            <div class="col-lg-1">
+                                @Html.DropDownList("GIA", l3, "Sắp xếp giá", new { @style = "width:auto", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-1">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                            <div class="col-lg-2">
+                                @Html.DropDownList("TENTHANHPHO", l4, "Địa điểm", new { @style = "width:auto", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-1">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+                <a class="bntcss" href="/Categories/SearchOption">Tìm Tin Theo Giá</a>
+            }
+            <br /><br /><br />
             <!-- End Search Form -->
             <section class="row-item-grid">
                 @foreach (var item in Model)

@@ -36,10 +36,20 @@ namespace RaoVat.Controllers
                 return View(list.ToPagedList(pageNum, pageSize));
             }
         }
-        public ActionResult Search(string keyword, string TENLOAI,string TENTHANHPHO, int? page)
+        public ActionResult Search(string keyword, string TENLOAI,string TENTHANHPHO, string GIA, int? page)
         {
             int pageSize = 4;
             int pageNum = (page ?? 1);
+            if (GIA == "Giá Tăng Dần")
+            {
+                var lista = db.RAOVATs.OrderBy(x => x.GIA).Where(x=>x.MATRANGTHAI == 1).ToList();
+                return View(lista.ToPagedList(pageNum, pageSize));
+            }
+            if (GIA == "Giá Giảm Dần")
+            {
+                var lista = db.RAOVATs.OrderByDescending(x => x.GIA).Where(x => x.MATRANGTHAI == 1).ToList();
+                return View(lista.ToPagedList(pageNum, pageSize));
+            }
             if (TENLOAI == "Xe" || TENLOAI == "Đồ điện tử" || TENLOAI == "Hôn nhân" || TENLOAI == "Nội thất" || TENLOAI == "Công việc" || TENLOAI == "Địa ốc" || TENLOAI == "Sức khỏe và làm đẹp" || TENLOAI == "Thời trang" || TENLOAI == "Giáo dục" || TENLOAI == "Dụng cụ" || TENLOAI == "Du lịch")
             {
                 var lista = db.RAOVATs.Include("CATEGORY").OrderByDescending(x => x.NGAYGIODANG).Where(p => p.CATEGORY.TENLOAI == TENLOAI).Where(s => s.MATRANGTHAI == 1).ToList();
@@ -62,6 +72,11 @@ namespace RaoVat.Controllers
         {
             var catelist = db.CATEGORies.ToList();
             return PartialView(catelist);
+        }
+        public ActionResult SearchOption(double min = double.MinValue, double max = double.MaxValue)
+        {
+            var listsear = db.RAOVATs.OrderByDescending(x => x.NGAYGIODANG).Where(p => (double)p.GIA >= min && (double)p.GIA <= max).Where(s => s.MATRANGTHAI == 1).ToList();
+            return View(listsear);
         }
     }
 }
